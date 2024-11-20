@@ -2,6 +2,28 @@ package com.amagana.technicaltest.employeemanagement.service.impl;
 
 
 
+import com.amagana.technicaltest.employeemanagement.dtos.PageResultDto;
+import com.amagana.technicaltest.employeemanagement.repository.GradeRepository;
+import com.amagana.technicaltest.employeemanagement.service.GradeProjection;
+import com.amagana.technicaltest.employeemanagement.service.GradeService;
+import com.amagana.technicaltest.employeemanagement.utilis.GradeMapper;
+import com.amagana.technicaltest.employeemanagement.utilis.PageDtoMapper;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
+import jakarta.transaction.Transactional;
+import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+import com.amagana.technicaltest.employeemanagement.dtos.GradeDtoResponse;
+import com.amagana.technicaltest.employeemanagement.dtos.GradeDtoRequest;
+import com.amagana.technicaltest.employeemanagement.entity.Grade;
+import com.amagana.technicaltest.employeemanagement.exceptions.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 

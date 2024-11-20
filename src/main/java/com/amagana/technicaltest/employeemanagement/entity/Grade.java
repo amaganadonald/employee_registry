@@ -25,8 +25,11 @@ public class Grade {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "grade_seq")
     @SequenceGenerator(name = "grade_seq")
     private Long id;
+    @Column(name = "grade_name")
     private String gradeName;
+    @Column(name = "from_date")
     private Date fromDate;
+    @Column(name = "to_date")
     private Date toDate;
     @OneToMany(mappedBy = "grade")
     @ToString.Exclude

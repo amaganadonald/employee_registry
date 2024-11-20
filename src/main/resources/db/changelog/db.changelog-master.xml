@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!--include file="db/changelog/1.0-initial-schema.xml"/-->
+    <include file="db/changelog/initial-schema/1-create-address-table.xml"/>
+    <include file="db/changelog/initial-schema/2-create-department-table.xml"/>
+    <include file="db/changelog/initial-schema/3-create-grade-table.xml"/>
+    <include file="db/changelog/initial-schema/4-create-employee-table.xml"/>
+    <!--include file="db/changelog/1.1-add-users-table.xml"/-->
+
+</databaseChangeLog>

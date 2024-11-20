@@ -1,7 +1,6 @@
 package com.amagana.technicaltest.employeemanagement.models;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.amagana.technicaltest.employeemanagement.dtos.EmployeeDtoResponse;
 import com.amagana.technicaltest.employeemanagement.dtos.PageResultDto;
 import com.amagana.technicaltest.employeemanagement.dtos.ErrorsDto;
 import com.amagana.technicaltest.employeemanagement.enums.StatusResponse;

@@ -8,8 +8,6 @@ import com.amagana.technicaltest.employeemanagement.service.EmployeeService;
 import com.amagana.technicaltest.employeemanagement.service.GradeService;
 import net.datafaker.Faker;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

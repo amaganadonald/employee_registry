@@ -25,10 +25,15 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "employee_seq")
     @SequenceGenerator(name = "employee_seq", initialValue = 1)
     private Long id;
+    @Column(name = "first_name")
     private String firstName;
+    @Column(name = "last_name")
     private String lastName;
+    @Column(name = "job_title")
     private String jobTitle;
+    @Column(name = "contract_start_date")
     private LocalDate contractStartDate;
+    @Column(name = "contract_end_date")
     private LocalDate contractEndDate;
     @Enumerated(EnumType.STRING)
     private Gender gender;
@@ -51,6 +56,7 @@ public class Employee {
     @JsonBackReference
     private Grade grade;
 
+    @Column(name = "created_user_name")
     private String createdUserName;
     @Version
     private int version;
